@@ -18,7 +18,7 @@ switch method
         Limits = get(ax_frame, [ax 'lim']);
         Span = Limits(2) - Limits(1);
     case "By_values"
-        [Span, Limits] = find_limits(ax_frame, ax);
+        [Span, Limits] = Plotlib.find_limits(ax_frame, ax);
 end
 
 if isempty(Span)
