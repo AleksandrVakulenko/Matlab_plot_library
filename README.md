@@ -1,2 +1,2 @@
-# Matlab_plot_library
+# Matlab plot library
 Collection of functions for matlab plotting.
