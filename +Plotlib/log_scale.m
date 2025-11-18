@@ -17,6 +17,6 @@ function log_scale(axis, style, axes_obj)
         set(axes_obj, 'zscale', 'log');
     end
 
-    log_scale_ticks(axis, style, axes_obj);
+    Plotlib.log_scale_ticks(axis, style, axes_obj);
 
 end
