@@ -10,16 +10,20 @@ function [Span, Limits] = find_limits(ax_frame, ax)
     Max = -inf;
     Min = +inf;
     for i = 1:numel(lines)
-        if ax == "x"
-            Line = lines(i).XData;
-        else
-            Line = lines(i).YData;
-        end
-        if max(Line) > Max
-            Max = max(Line);
-        end
-        if min(Line) < Min 
-            Min = min(Line);
+        try
+            if ax == "x"
+                Line = lines(i).XData;
+            else
+                Line = lines(i).YData;
+            end
+            if max(Line) > Max
+                Max = max(Line);
+            end
+            if min(Line) < Min 
+                Min = min(Line);
+            end
+        catch
+            % just to ignore xline and yline
         end
     end
     
