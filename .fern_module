@@ -1,6 +1,6 @@
-name:
-Plotlib
-
-dependencies:
-
-info:
+{
+  "name": "Plotlib",
+  "dependecies": [],
+  "info": "Collection of functions for matlab plot",
+  "Tegs": "plot; figure; logscale, tickmarks"
+}
