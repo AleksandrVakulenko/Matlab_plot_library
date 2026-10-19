@@ -1,6 +1,6 @@
 {
   "name": "Plotlib",
-  "dependecies": [],
+  "dependecies": "ShadedErrorBar",
   "info": "Collection of functions for matlab plot",
   "Tegs": "plot; figure; logscale, tickmarks"
 }
